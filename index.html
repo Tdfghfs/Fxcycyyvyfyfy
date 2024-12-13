@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barber Booking System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>حجز موعد عند الحلاق</h1>
+        <div id="booking-form">
+            <label for="name">اسم المستخدم:</label>
+            <input type="text" id="name" placeholder="أدخل اسمك">
+            
+            <label for="service">الخدمة المطلوبة:</label>
+            <select id="service">
+                <option value="حلاقة شعر">حلاقة شعر</option>
+                <option value="تنظيف وجه">تنظيف وجه</option>
+                <option value="حلاقة + تنظيف">حلاقة + تنظيف</option>
+            </select>
+            
+            <button id="book-btn">احجز الآن</button>
+        </div>
+        
+        <h2>الطلبات الحالية</h2>
+        <div id="booking-list"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
